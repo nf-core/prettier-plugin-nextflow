@@ -10,6 +10,7 @@
     "lodash": "4.17.21"
   },
   "scripts": {
+    "index": "node src/index.js",
     "test": "npm-run-all clone-samples test:execute",
     "test:execute": "mocha \"test/**/*-spec.js\"",
     "clone-samples": "node ./scripts/clone-samples"

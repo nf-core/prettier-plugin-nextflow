@@ -4,7 +4,9 @@ const createToken = chevrotain.createToken
 
 // using createToken API
 
-const Process = createToken({ name: "process", pattern: /process\s+\w+\s+{/ })
+const ProcessStart = createToken({ name: "process", pattern: /process\s+\w+\s+{\s/ })
+
+const ProcessEnd = createToken({ name: "process", pattern: /\}/ })
 
 const Input = createToken({ name: "input", pattern: /input:/ })
 
@@ -24,7 +26,8 @@ const WhiteSpace = createToken({
 let allTokens = [
   WhiteSpace,
   // "keywords" appear before the Identifier
-  Process,
+  ProcessStart,
+  ProcessEnd,
   // The Identifier must appear after the keywords because all keywords are valid identifiers.
   Input,
   Output,

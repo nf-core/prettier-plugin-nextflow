@@ -1,0 +1,17 @@
+{
+  "name": "nextflow-parser",
+  "version": "0.0.1",
+  "description": "Nextflow Parser in JavaScript",
+  "main": "src/index.js",
+  "repository": "https://github.com/nf-core/prettier-plugin-nextflow/tree/main/packages/nextflow-parser",
+  "license": "MIT",
+  "dependencies": {
+    "chevrotain": "6.5.0",
+    "lodash": "4.17.21"
+  },
+  "scripts": {
+    "test": "npm-run-all clone-samples test:execute",
+    "test:execute": "mocha \"test/**/*-spec.js\"",
+    "clone-samples": "node ./scripts/clone-samples"
+  }
+}

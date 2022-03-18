@@ -18,6 +18,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "nextflow-parser": "file:../nextflow-parser",
     "prettier": "^1.15.3"
   },
   "devDependencies": {

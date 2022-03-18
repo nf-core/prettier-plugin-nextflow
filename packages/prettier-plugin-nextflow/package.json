@@ -1,7 +1,7 @@
 {
   "name": "prettier-plugin-nextflow",
   "version": "0.0.1",
-  "description": "",
+  "description": "Prettier Nextflow Plugin",
   "main": "src/index.js",
   "scripts": {
     "example": "prettier --plugin . example.nf",

@@ -1,0 +1,12 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "lerna:version": "lerna version --exact --git-remote upstream",
+    "lerna:publish": "lerna publish from-git --yes"
+  },
+  "devDependencies": {
+    "lerna": "4.0.0"
+  }
+}

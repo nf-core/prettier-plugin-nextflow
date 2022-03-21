@@ -4,7 +4,7 @@ const createToken = chevrotain.createToken
 
 // using createToken API
 
-const ProcessStart = createToken({ name: "process", pattern: /process\s+\w+\s+{\s/ })
+const ProcessStart = createToken({ name: "process", pattern: /process\s+\w+\s+{\s+/ })
 
 const ProcessEnd = createToken({ name: "process", pattern: /\}/ })
 
